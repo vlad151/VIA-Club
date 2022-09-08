@@ -1,0 +1,212 @@
+body {
+    width: 100%;
+    color: #2f2d2e;
+    background-color: #f4f9e9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .row{
+      margin-top: 1em;
+  }
+  #cover{
+      width: 100%;
+      height: auto;
+  }
+  #intro{
+      text-align: center;
+  }
+  table{
+      width: 100%;
+      
+  }
+  tr,td{
+      border: 1px solid black;
+      width: 10%;
+      height: 2.5em;
+      background-color: #EEF0F2;
+  }
+  td:hover{
+      border: 3px solid #103f79;
+  }
+  #month{
+      border: none;
+  }
+  .day{
+    background-color: #103f79;
+    color: #fabd21;
+  }
+  .special{
+    background-color: rgb(113, 119, 175);
+    cursor: pointer;
+  }
+  .league{
+    background-color: rgb(182, 184, 183);
+    cursor: pointer;
+  }
+  .cup{
+    background-color: rgb(196, 205, 255);
+    cursor: pointer;
+  }
+  .friendly{
+    background-color: rgb(255, 236, 131);
+    cursor: pointer;
+  }
+  #listOfEvents{
+      background-color:#fabd21 ;
+      text-align: center;
+  }
+  footer{
+      margin-top: 2em;
+  }
+  #overlay5{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 2;
+    cursor: pointer;
+  }
+  #overlay2{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 2;
+    cursor: pointer;
+  }
+  #overlay10{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 2;
+    cursor: pointer;
+  }
+  #overlay19{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 2;
+    cursor: pointer;
+  }
+  #overlay25{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 2;
+    cursor: pointer;
+  }
+  #overlay27{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 2;
+    cursor: pointer;
+  }
+  #overlay28{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 2;
+    cursor: pointer;
+  } 
+   #overlay31{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 2;
+    cursor: pointer;
+  }
+  .overlayText{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 20em;
+    background-color: #EEF0F2;
+    border-radius: 5px;
+    border:3px solid #fabd21 ;
+    color: #2f2d2e;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 2em;
+  }
+  @media only screen and (max-width: 768px){
+      .overlayText{
+        font-size: 1rem;
+      }
+  }
+  ::-webkit-scrollbar{
+    width: 10px;
+  
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #103f79;
+    opacity: 0.8;
+    transition: .2s;
+   
+    border-radius: 15px
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    opacity: 1;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: rgb(201, 200, 200);
+    opacity: 0.5;
+  }
+
+  #matchTable th, td, tr{
+    border: 2px solid black;
+    text-align: center;
+    background-color: lightgrey;
+    padding: 10px;
+    
+  }
+  #matchTable{
+    width: 100%;
+
+  }

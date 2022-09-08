@@ -1,0 +1,143 @@
+body {
+  width: 100%;
+  color: #2f2d2e;
+  background-color: #f4f9e9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container {
+  margin-top: 5em;
+}
+.row {
+  margin-top: 5em;
+}
+#stadium {
+  width: 100%;
+  height: auto;
+}
+h3 {
+  color: #f3b229;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+}
+
+#robert {
+  max-width: 100%;
+  height: auto;
+}
+#robDiv {
+  color: gray;
+  text-align: center;
+}
+.icon {
+  font-size: 2rem;
+}
+#map {
+  background-color: #f3b229;
+  display: flex;
+  justify-content: center;
+}
+#location {
+  width: 100%;
+  height: auto;
+  height: 20em;
+}
+#secondRow {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#contacts {
+  background-color: #103f79;
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+#entrance {
+  width: 100%;
+  height: auto;
+}
+
+#hoursDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: left;
+}
+#merchRow {
+  background-color: #103f79;
+}
+#merchCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+#button {
+  margin-top: 1em;
+  color: white;
+  background-color: gray;
+  width: 10em;
+  height: 5em;
+  border-radius: 3px;
+  transition: 0.3s;
+  text-align: center;
+  padding-top: 1.7em;
+}
+#button:hover {
+  background-color: #f3b229;
+}
+#merch {
+  width: 100%;
+  height: auto;
+}
+form input,
+textarea {
+  width: 100%;
+}
+textarea {
+  margin-top: 1em;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+#submitButton {
+  background-color: #12c93d;
+  height: 2.5em;
+  color: white;
+  border-radius: 3px;
+}
+#resetButton {
+  background-color: #4284ed;
+  height: 2.5em;
+  color: white;
+  border-radius: 3px;
+}
+footer {
+  margin-top: 5em;
+}
+::-webkit-scrollbar{
+  width: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+  background-color: #103f79;
+  opacity: 0.8;
+  transition: .2s;
+ 
+  border-radius: 15px
+}
+::-webkit-scrollbar-thumb:hover{
+  opacity: 1;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(201, 200, 200);
+  opacity: 0.5;
+}

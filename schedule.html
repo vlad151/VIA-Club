@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link href="css/schedule.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+
+    <link rel="icon" href="../images/viac_small.png">
+
+    <title>Schedule</title>
+
+</head>
+
+<body>
+    <!--Nav bar responsive-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="images/viac_small.png" alt="logo" id="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"> <a class="nav-link active" href="schedule.html">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="team.html">The Team</a></li>
+                <li class="nav-item "> <a class="nav-link" href="news.html">News</a></li>
+                <li class="nav-item "> <a class="nav-link" href="aboutUs.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+ <!--Nav bar responsive end-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <img src="images/schedule.jpg" id="cover" alt="schedule">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2" id="intro">
+                <p>Here you will find the events that will take place in May 2021.
+                    From usual matches to important tournaments, from boring interviews to fan meetings.
+                    Everything has it's place in our calendar. Feel free to take part in our events and become
+                    our number one supporter.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <table>
+                    <tr id="month">
+                        <th class="day">
+                            May
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="day">Sun</th>
+                        <th class="day">Mon</th>
+                        <th class="day">Tue</th>
+                        <th class="day">Wed</th>
+                        <th class="day">Thu</th>
+                        <th class="day">Fri</th>
+                        <th class="day">Sat</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td class="special" onclick="on2()">2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td class="cup" onclick="on5()">5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="league" onclick="on10()">10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td class="league" onclick="on19()">19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>24</td>
+                        <td class="special" onclick="on25()">25</td>
+                        <td >26</td>
+                        <td class="league" onclick="on27()">27</td>
+                        <td class="friendly" onclick="on28()">28</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td class="special" onclick="on31()">31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="overlay5" onclick="off5()">
+            <div class="overlayText">
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+                <p>Cup match</p>
+                <p>Supercup Match against Aarhus United</p>
+                <p>19:00-21:30</p>
+            </div>
+        </div>
+
+        <div id="overlay2" onclick="off2()">
+            <div  class="overlayText">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <p>Special Event</p>
+                <p>Interview with CNN</p>
+                <p>10:00-12:30</p>
+            </div>
+        </div >
+
+        <div id="overlay10" onclick="off10()">
+        <div class="overlayText">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <p>League Match</p>
+            <p>Match versus Copenhagen Wizards</p>
+            <p>15:30-18:00</p>
+        </div></div>
+        <div id="overlay19" onclick="off19()">
+            <div class="overlayText">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+            <p>League Match</p>
+            <p>Match versus Odense Pythons</p>
+            <p>15:30-18:00</p>
+            </div>
+
+        </div>
+        <div id="overlay25" onclick="off25()">
+            <div class="overlayText">
+                <i class="fa fa-star" aria-hidden="true"></i>
+            <p>Special Event</p>
+            <p>"Are you old enough" Manager Interview</p>
+            <p>14:45-17:00</p>
+            </div>
+
+        </div>
+        <div id="overlay27" onclick="off27()">
+            <div class="overlayText">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+            <p>League Match</p>
+            <p>Match versus Aalborg Elks</p>
+            <p>15:30-18:00</p>
+            </div>
+
+        </div>
+        <div id="overlay28" onclick="off28()">
+            <div class="overlayText">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+            <p>Friendly Match</p>
+            <p>Match at Ajax Amsterdam</p>
+            <p>19:00-21:30</p>
+            </div>
+
+        </div>
+        <div id="overlay31" onclick="off31()">
+            <div class="overlayText">
+                <i class="fa fa-star" aria-hidden="true"></i>
+            <p>Special Event</p>
+            <p>Fan Meeting</p>
+            <p>10:00-19:30</p>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-3">
+                <p class="friendly">Friendly Matches</p>
+                <p class="league">League Matches</p>
+                <p class="cup">Cup Matches</p>
+                <p class="special">Special Events</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12" id="listOfEvents">
+                <h3>List of events</h3>
+                <p>Sunday, 2 May 10:00-12:30 Interview with CNN</p>
+                <p>Wednesday, 5 May 19:00-21:30 Supercup Final agains Aarhus United </p>
+                <p>Monday, 10 May 15:30-18:00 Match versus Copenhagen Wizards</p>
+                <p>Wednesday, 19 May 15:30-18:00 Match versus Odense Pythons</p>
+                <p>Tuesday, 25 May 14:45-17:00 "Are you old enogh?"- Manager interview</p>
+                <p>Thursday, 27 May 15:30-18:00 Match versus Aalborg Elks</p>
+                <p>Friday, 28 May 19:00-21:30 Friendly match at Ajax Amsterdam</p>
+                <p>Monday, 31 May 10:00-19:30 Fan meeting</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div><h1>Upcoming Match</h1></div>
+        <div class="row">
+            <div class=col-lg-12>
+                <table id="matchTable"></table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/matchList.js"> </script>
+
+</body>
+
+<!--Footer Start-->
+
+<footer class="bg-dark text-center text-white">
+    <div class="footer-content p-2">
+
+        <div class="footer-section " style="font-size:10px">
+            <h2 class="Via-text" style="font-size:15px "> <span>VIA CLUB</span></h2>
+            <ul class="list-unstyled mb-0">
+
+                <li><i class="fa fa-phone" aria-hidden="true"></i> +45 1234566</li>
+
+
+                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:kasr@via.dk">ViaClub@via.dk
+                    </a></li>
+
+
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Langmarksvej 61, 8700, Horsens</li>
+
+            </ul>
+        </div>
+
+
+        <div class="social" style="font-size:30px">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-youtube-play"
+                    aria-hidden="true"></i></a>
+            <a href="https://twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-2" style="background-color:black; color: white; font-size: small;">
+        copyright &copy; 2021 VIA Club. All Rights Reserved.
+    </div>
+
+
+</footer>
+<!--Footer Finish-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="js/schedule.js"></script>
+<script src="js/macth.js"></script>
+</body>
+
+</html>

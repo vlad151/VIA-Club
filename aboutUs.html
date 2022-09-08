@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link href="css/aboutUs.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="icon" href="../images/viac_small.png">
+
+    <title>About Us</title>
+
+<body>
+
+        <!--Nav bar responsive-->
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+          <a class="navbar-brand" href="index.html"><img src="images/viac_small.png" alt="logo" id="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"> <a class="nav-link " href="schedule.html">Schedule</a></li>
+                  <li class="nav-item"><a class="nav-link" href="team.html">The Team</a></li>
+                  <li class="nav-item "> <a class="nav-link" href="news.html">News</a></li>
+                  <li class="nav-item "> <a class="nav-link active" href="aboutUs.html">About Us</a></li>
+              </ul>
+          </div>
+      </nav>
+   
+   <!--Nav bar responsive end-->
+   
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12" id="cover">
+                <img src="images/stadium.jpg" id="stadium" alt="stadium">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6" id="intro">
+                <h3>How it all started</h3>
+                <p>The Vellcity Indoor Athletics Club, now often simply referred as VIAClub, was founded almost a
+                    hundred years ago by the legendary athelete Robers Sixpack, as a place for the locals to participate
+                    in various indoor sport activities.</p>
+            </div>
+            <div class="col-lg-6" id="robDiv">
+                <img src="images/robert.jpg" id="robert" alt="robert">
+                <p><i>Picture of Robert Sixpack at 16 y/o</i></p>
+            </div>
+        </div>
+        <div class="row" id="secondRow">
+
+            <div class="col-lg-6" id="contacts">
+                <h3>Location & Contact</h3>
+                <p><i class="fa fa-phone fa-2x icon" aria-hidden="true"></i>+45 1234566</p>
+                <p> <i class="fa fa-envelope fa-2x icon" aria-hidden="true"></i>viaclub@via.dk</p>
+                <p><i class="fa fa-map-marker fa-2x icon" aria-hidden="true"></i>Langmarksvej 61, 8700, Horsens</p>
+            </div>
+            <div class="col-lg-6" id="map">
+                <iframe id="location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.512627590837!2d9.855796516019065!3d55.87112189032756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c630a33d4a107%3A0x4f1cf154b7a2961c!2sLangmarksvej%2061%2C%208700%20Horsens%2C%20Denmark!5e0!3m2!1sen!2sus!4v1618487895854!5m2!1sen!2sus"
+              style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6" id="hoursDiv">
+                <h3>Open Hours</h3>
+
+                <p>Monday-Friday: 09:00-17:30</p>
+                <p>Saturday: 09:00-15:00</p>
+                <p>Sunday: 10:30-12:30</p>
+
+            </div>
+            <div class="col-lg-6">
+                <img src="images/entrance.jpg" id="entrance" alt="entrance">
+            </div>
+        </div>
+        <div class="row" id="merchRow">
+            <div class="col-lg-8 offset-lg-2" id="merchCol">
+                <h3>VIA Club Store</h3>
+                <img src="images/merch.jpg" id="merch" alt="merch">
+                <a id="button"
+                    href="https://www.customink.com/designs/viaclub/wgy0-00ce-8f8c/share?pc=EMAIL-40778&utm_campaign=shared%20design&utm_source=share%20link&utm_medium=shared%20design&utm_content=shared%20desktop">
+                       Go to store</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <h3>Give us your thoughts about VIA Club</h3>
+                <form id="form" action="get">
+                    <label for="fname">Name:</label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Email:</label>
+                    <input type="text" id="lname" name="lname"><br>
+                    <textarea placeholder="Your comment" name="comment" cols="50"></textarea><br>
+                    <div class="buttons">
+                        <input type="submit" id="submitButton" value="Submit">
+                        <input type="reset" id="resetButton">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer Start-->
+
+    <footer class="bg-dark text-center text-white">
+        <div class="footer-content p-2">
+
+            <div class="footer-section " style="font-size:10px">
+                <h2 class="Via-text" style="font-size:15px "> <span>VIA CLUB</span></h2>
+                <ul class="list-unstyled mb-0">
+
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> +45 1234566</li>
+
+
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:kasr@via.dk">ViaClub@via.dk
+                        </a></li>
+
+
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> Langmarksvej 61, 8700, Horsens</li>
+
+                </ul>
+            </div>
+
+
+            <div class="social" style="font-size:30px">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-youtube-play"
+                        aria-hidden="true"></i></a>
+                <a href="https://twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-2" style="background-color:black; color: white; font-size: small;">
+            copyright &copy; 2021 VIA Club. All Rights Reserved.
+        </div>
+
+
+    </footer>
+    <!--Footer Finish-->
+
+</body>
+
+</html>
